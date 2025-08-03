@@ -11,7 +11,7 @@ export class SocketService {
   public binaryFlow$ = new BehaviorSubject<{ sequence: string, color: string, interval: number }>({ sequence: '', color: '#000', interval: 1000 });
   public location = inject(Location)
   constructor() {
-    this.socket = io(`${window.location.origin}:3000`);
+    this.socket = io(`${window.location.protocol}//${window.location.hostname}:3000`);
     this.socket.on('light', (data: any) => {
       this.color$.next(data.color);
       this.effect$.next(data.effect);
