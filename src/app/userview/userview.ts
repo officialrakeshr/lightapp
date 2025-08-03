@@ -29,7 +29,7 @@ declare var bootstrap: any;
       <div class="modal-footer justify-content-between bg-carnival-footer">
         <img src="rhythm_logo.png" alt="Coordinator" class="coordinator-logo">
         <div>
-          <button type="button" class="btn btn-outline-light me-2" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-dark me-2" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-warning" (click)="toggleFullScreen()">Fullscreen Mode</button>
         </div>
       </div>
@@ -97,15 +97,15 @@ declare var bootstrap: any;
   background: linear-gradient(135deg, #ff4081, #ffeb3b);
   border: 5px solid #fff;
   box-shadow: 0 0 20px rgba(255, 64, 129, 0.6);
-  font-family: 'Luckiest Guy', cursive;
+  font-family: "Share Tech", sans-serif;
 }
 
 .bg-carnival {
-  background: linear-gradient(to right, #ff6f00, #f50057);
+  background: linear-gradient(to right, #1c034d, #ca1cdf);
 }
 
 .bg-carnival-footer {
-  background: #ff4081;
+  background: #ffff;
   padding: 1rem;
 }
 .event-logo{
