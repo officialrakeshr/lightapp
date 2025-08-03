@@ -21,7 +21,7 @@ declare var bootstrap: any;
 
       <!-- Body -->
       <div class="modal-body py-4 bg-carnival">
-        <h2 class="carnival-title mb-3">🎉 Welcome to Carnival Bash 🎉</h2>
+        <h2 class="carnival-title mb-3">🎉 Welcome to Carnival Bash 2025 🎉</h2>
         <p class="lead">Get ready for a spectacular celebration filled with fun, music, and surprises!</p>
       </div>
 
