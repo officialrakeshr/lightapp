@@ -17,7 +17,6 @@ declare var bootstrap: any;
       <!-- Header with logos -->
       <div class="modal-header justify-content-center border-0 position-relative bg-carnival">
         <img src="bash_carnival_logo.png" alt="Event Logo" class="event-logo">
-        <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
       <!-- Body -->
