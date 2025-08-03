@@ -2,11 +2,12 @@ import { Component, OnInit } from "@angular/core";
 import { SocketService } from "../socket";
 import { CommonModule } from "@angular/common";
 import NoSleep from 'nosleep.js';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @Component({
   selector: 'app-userview',
   standalone:true,
-  imports:[CommonModule],
+  imports:[CommonModule, BrowserAnimationsModule],
   template: `<div [ngStyle]="{ 'background-color': color }" class="full-screen" [ngClass]="effect">&nbsp;</div>`,
   styles: [`
     .full-screen {
@@ -32,7 +33,7 @@ import NoSleep from 'nosleep.js';
     .strobe {
       animation: strobe 100ms infinite;
     }
-    
+
     @keyframes strobe {
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
@@ -48,10 +49,6 @@ import NoSleep from 'nosleep.js';
     }
 
     @keyframes flash {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-     @keyframes flash {
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
     }

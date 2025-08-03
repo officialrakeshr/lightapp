@@ -4,6 +4,6 @@ import { Adminview } from './adminview/adminview';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'user', pathMatch: 'full' },
-  { path: 'user', component: Userview },
-  { path: 'admin', component: Adminview },
+  { path: 'user', title:'Carnival Light', component: Userview },
+  { path: 'godmode', component: Adminview },
 ];
