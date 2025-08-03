@@ -2,12 +2,11 @@ import { Component, OnInit } from "@angular/core";
 import { SocketService } from "../socket";
 import { CommonModule } from "@angular/common";
 import NoSleep from 'nosleep.js';
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @Component({
   selector: 'app-userview',
   standalone:true,
-  imports:[CommonModule, BrowserAnimationsModule],
+  imports:[CommonModule],
   template: `<div [ngStyle]="{ 'background-color': color }" class="full-screen" [ngClass]="effect">&nbsp;</div>`,
   styles: [`
     .full-screen {
