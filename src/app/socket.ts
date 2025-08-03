@@ -1,6 +1,7 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { io, Socket } from 'socket.io-client';
 import { BehaviorSubject } from 'rxjs';
+import { Location } from '@angular/common';
 
 @Injectable({ providedIn: 'root' })
 export class SocketService {
@@ -8,9 +9,9 @@ export class SocketService {
   public color$ = new BehaviorSubject<string>('#000');
   public effect$ = new BehaviorSubject<string>('none');
   public binaryFlow$ = new BehaviorSubject<{ sequence: string, color: string, interval: number }>({ sequence: '', color: '#000', interval: 1000 });
-
+  public location = inject(Location)
   constructor() {
-    this.socket = io(`${window.location.hostname}:3000`);
+    this.socket = io(`${window.location.origin}:3000`);
     this.socket.on('light', (data: any) => {
       this.color$.next(data.color);
       this.effect$.next(data.effect);
