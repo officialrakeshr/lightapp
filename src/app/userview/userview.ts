@@ -31,7 +31,7 @@ declare var bootstrap: any;
         <img src="rhythm_logo.png" alt="Coordinator" class="coordinator-logo">
         <div>
           <button type="button" class="btn btn-outline-light me-2" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-warning" (click)="toggleFullScreen()">Toggle Fullscreen</button>
+          <button type="button" class="btn btn-warning" (click)="toggleFullScreen()">Fullscreen Mode</button>
         </div>
       </div>
 
@@ -98,7 +98,7 @@ declare var bootstrap: any;
   background: linear-gradient(135deg, #ff4081, #ffeb3b);
   border: 5px solid #fff;
   box-shadow: 0 0 20px rgba(255, 64, 129, 0.6);
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Luckiest Guy', cursive;
 }
 
 .bg-carnival {
