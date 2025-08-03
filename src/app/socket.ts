@@ -10,7 +10,7 @@ export class SocketService {
   public binaryFlow$ = new BehaviorSubject<{ sequence: string, color: string, interval: number }>({ sequence: '', color: '#000', interval: 1000 });
 
   constructor() {
-    this.socket = io('http://localhost:3000');
+    this.socket = io({ path: '/socket.io' });
     this.socket.on('light', (data: any) => {
       this.color$.next(data.color);
       this.effect$.next(data.effect);
@@ -26,4 +26,5 @@ export class SocketService {
   emitBinaryFlow(sequence: string, color: string, interval: number) {
     this.socket.emit('binary', { sequence, color, interval });
   }
+  
 }
